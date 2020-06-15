@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Peta - TravelNusantara</title>
+
+	<link rel="stylesheet" type="text/css" href="http://finalis.vocomfest.com/simalakama/assets/css/custom-grid.css">
+	<!-- style css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/custom-grid.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/slider.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/tabs.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+	<link rel="shortcut icon" href="assets/img/Favicon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+      /* Always set the map height explicitly to define the size of the div
+      * element that contains the map. */
+      #map {
+      	height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+      	height: 1000px;
+      	margin: 0;
+      	padding: 0;
+      }
+      .img-kecil{
+      	width: 74px;
+      	height: 74px;
+      	border-radius: 5px;
+      	margin-right: 30px;
+      }
+      .info-window > .deskripsi > a {
+      	font-family: 'Nunito';
+      	font-size: 13px;
+      	text-align: right;
+      	color: #0086cd;
+      	text-decoration: none;
+      }
+      #floating-panel {
+      	position: absolute;
+      	top: 134px;
+      	left: 5%;
+      	z-index: 5;
+      	background-color: #fff;
+      	/* padding: 5px; */
+      	/* border: 1px solid #999; */
+      	text-align: center;
+      	font-family: 'Roboto','sans-serif';
+      	line-height: 30px;
+      	/* padding-left: 10px; */
+      	width: 251px;
+      	display: inline;
+      	border-radius: 4px;
+      }
+      .floating-item-left{
+      	height: 125px;
+      	width: 124px;
+      	border-right-width: 1px;
+      	border-right-style: solid;
+      	border-right-color: #dfe4e9;
+      	border-bottom-width: 1px;
+      	border-bottom-style: solid;
+      	border-bottom-color: #dfe4e9;
+      	float: left;
+      }
+      .floating-item-left:hover{
+      	border-bottom-width: 3px;
+      	border-bottom-style: solid;
+      	border-bottom-color: #328ad4;
+      	cursor: pointer;
+      }
+      .wow{
+      	border-bottom-width: 3px !important;
+      	border-bottom-style: solid;
+      	border-bottom-color: #328ad4 !important;
+      }
+      .floating-item-left > img {
+      	margin-top: 34px;
+      }
+      .floating-item-right{
+      	height: 125px;
+      	width: 124px;
+      	border-bottom-width: 1px;
+      	border-bottom-style: solid;
+      	border-bottom-color: #dfe4e9;
+      	float: right;
+      }
+      .floating-item-right:hover{
+      	border-bottom-width: 3px;
+      	border-bottom-style: solid;
+      	border-bottom-color: #328ad4;
+      	cursor: pointer;
+      }
+      .floating-item-right > img {
+      	margin-top: 34px;
+      }
+  </style>
+</head>
+<body>
+	
+	<nav>
+		<!-- Topbar -->
+		<div id="topbar">
+			<div class="container">
+				<div class="flex">
+					<div class="topbar">
+						<img src="assets/img/icon/close-envelope.svg"> <span>nusantaratravel@gmail.com</span>
+						<img src="assets/img/icon/phone-receiver.svg"> <span>081228258356</span>
+					</div>
+					<div class="topbar right">
+						<img src="assets/img/icon/indonesia.svg">
+						<select>
+							<option value="IND">IND</option>
+							<option value="IND">ENG</option>
+						</select>
+						<label for="modal-trigger" class="open-modal"><img src="assets/img/icon/user-shape.svg">Masuk</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Topbar -->
+		<!-- navbar -->
+		<div class="sticky">
+			<div class="menu-container">
+				<div class="container">
+					<a href="index.html" class="logo"><img src="assets/img/logo.png"></a>
+					<input class="menu-btn" type="checkbox" id="menu-btn" />
+					<label class="menu-icon" for="menu-btn">
+						<span class="navicon"></span>
+					</label>
+					<ul class="menu">
+						<li><a href="index.html">Beranda</a></li>
+						<li><a href="tentang.html">Tentang</a></li>
+						<li><a href="fitur.html">Fitur</a></li>
+						<li><a href="galeri.html">Galeri</a></li>
+						<li class="active"><a href="peta.html">Peta</a></li>
+						<li><a href="berita.html">Berita</a></li>
+						<li><a href="kontak.html">Kontak</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /navbar -->
+	</nav>
+	<div id="floating-panel">
+		<!-- <div>
+			<input type="checkbox" id="a" value="1" checked onchange="a()">
+		</div> -->
+		<div class="floating-item-left wow" id="semua" value="2" onclick="semua(this)">
+			<img src="ico/luggage-1-copy.svg" alt=""><br>
+			<label>Semua</label>
+		</div>
+		<div class="floating-item-right" id="danau" value="2" onclick="danau(this)">
+			<img src="ico/waduk.svg" alt=""><br>
+			<label>Danau</label>
+		</div>
+		<div class="floating-item-left" id="gunung" value="2" onclick="gunung(this)">
+			<img src="ico/gunung.svg" alt=""><br>
+			<label>Gunung</label>
+		</div>
+		<div class="floating-item-right" id="taman" value="2" onclick="taman(this)">
+			<img src="ico/taman.svg" alt=""><br>
+			<label>Taman</label>
+		</div>
+		<div class="floating-item-left" id="pantai" value="2" onclick="pantai(this)">
+			<img src="ico/pantai.svg" alt=""><br>
+			<label>Pantai</label>
+		</div>
+		<div class="floating-item-right" id="museum" value="2" onclick="museum(this)">
+			<img src="ico/museum.svg" alt=""><br>
+			<label>Museum</label>
+		</div>
+		<div class="floating-item-left" id="curug" value="2" onclick="curug(this)">
+			<img src="ico/air-terjun.svg" alt=""><br>
+			<label>Air Terjun</label>
+		</div>
+		<div class="floating-item-right" id="hutan" value="2" onclick="hutan(this)">
+			<img src="ico/hutan.svg" alt=""><br>
+			<label>Hutan</label>
+		</div>
+	</div>
+	<div id="map"></div>
+	<script>
+		var map;
+		var markerOne;
+		var mD1;
+		var markerGunung;
+		var mG1;
+		var mG2;
+		var markerTaman;
+		var mT1;
+		var mT2;
+		var markerPantai;
+		var mP1;
+		var mP2;
+		var markerMuseum;
+		var mM1;
+		var mM2;
+		var markerCurug;
+		var mC1;
+		var mC2;
+		var markerHutan;
+		var mH1;
+		var mH2;
+		function initMap() {
+
+			var iconBase = 'ico/';
+
+			var jakarta = {lat: -3.7890796,lng: 113.041577};
+			var waduk = {lat: -6.8763587, lng: 109.1124268};
+			var d1 = {lat: 2.470969, lng: 98.841748};
+			var gunung = {lat: -7.177387, lng: 109.828076};
+			var g1 = {lat: -6.697529, lng: 106.532178};
+			var g2 = {lat: -7.090177, lng: 111.190381};
+			var taman = {lat: -1.087769, lng: 102.313427};
+			var t1 = {lat: 1.065424, lng: 100.423779};
+			var t2 = {lat: -8.179054, lng: 113.651318};
+			var pantai = {lat: -8.526887, lng: 116.375928};
+			var p1 = {lat: -1.658892, lng: 131.756787};
+			var p2 = {lat: -3.985009, lng: 133.031201};
+			var museum = {lat: -1.614964, lng: 113.914990};
+			var m1 = {lat: -8.718265, lng: 116.956797};
+			var m2 = {lat: -8.452116, lng: 124.158335};
+			var curug = {lat: -1.439246, lng: 120.506787};
+			var c1 = {lat: -5.315267, lng: 119.577079};
+			var c2 = {lat: -3.694393, lng: 136.298517};
+			var hutan = {lat: 1.285104, lng: 116.375928};
+			var h1 = {lat: -4.947214, lng: 138.552678};
+			var h2 = {lat: 0.183157, lng: 110.708249};
+			map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 5,
+				center: jakarta
+			});
+
+			var contentOne = '<div class="info-window grid-web-12" style=" margin:0; padding:0;">'+
+			'<div class="grid-web-3" style="margin:0; padding:0;">'+
+			'<img src="ico/download.jpg" alt="image" class="img-kecil">'+
+			'</div>'+
+			'<div class="deskripsi grid-web-9">'+
+			'<h2>Distro Clothing</h2>'+
+			'<label><img src="ico/clock-circular-outline.svg" alt="clock"> Pukul 08:00 - 20:00</label><br/>'+
+			'<a href="">Lihat Selengkapnya</a>'+
+			'</div></div>';
+
+			var infowindow = new google.maps.InfoWindow({
+				content: contentOne
+			});
+
+			markerOne = new google.maps.Marker({
+				position: waduk,
+				icon: iconBase + 'waduk.svg',
+				map: map,
+				title: 'Uluru (Ayers Rock)'
+			});
+			markerOne.addListener('click', function() {
+				infowindow.open(map, markerOne);
+			});
+
+			mD1 = new google.maps.Marker({
+				position: d1,
+				icon: iconBase + 'waduk.svg',
+				map: map,
+				title: 'Uluru (Ayers Rock)'
+			});
+			mD1.addListener('click', function() {
+				infowindow.open(map, mD1);
+			});
+
+			markerGunung = new google.maps.Marker({
+				position: gunung,
+				icon: iconBase + 'gunung.svg',
+				map: map,
+				title: 'gunung kerinci'
+			});
+			markerGunung.addListener('click', function(){
+				infowindow.open(map, markerGunung);
+			});
+
+			mG1 = new google.maps.Marker({
+				position: g1,
+				icon: iconBase + 'gunung.svg',
+				map: map,
+				title: 'gunung kerinci'
+			});
+			mG1.addListener('click', function(){
+				infowindow.open(map, mG1);
+			});
+
+			mG2 = new google.maps.Marker({
+				position: g2,
+				icon: iconBase + 'gunung.svg',
+				map: map,
+				title: 'gunung kerinci'
+			});
+			mG2.addListener('click', function(){
+				infowindow.open(map, mG2);
+			});
+
+			markerTaman = new google.maps.Marker({
+				position: taman,
+				icon: iconBase + 'taman.svg',
+				map: map,
+				title: 'taman'
+			});
+			markerTaman.addListener('click', function(){
+				infowindow.open(map, markerTaman);
+			});
+
+			mT1 = new google.maps.Marker({
+				position: t1,
+				icon: iconBase + 'taman.svg',
+				map: map,
+				title: 'taman'
+			});
+			mT1.addListener('click', function(){
+				infowindow.open(map, mT1);
+			});
+
+			mT2 = new google.maps.Marker({
+				position: t2,
+				icon: iconBase + 'taman.svg',
+				map: map,
+				title: 'taman'
+			});
+			mT2.addListener('click', function(){
+				infowindow.open(map, mT2);
+			});
+
+			markerPantai = new google.maps.Marker({
+				position: pantai,
+				icon: iconBase + 'pantai.svg',
+				map: map,
+				title: 'pantai'
+			});
+			markerPantai.addListener('click', function(){
+				infowindow.open(map, markerPantai);
+			});
+
+			mP1 = new google.maps.Marker({
+				position: p1,
+				icon: iconBase + 'pantai.svg',
+				map: map,
+				title: 'pantai'
+			});
+			mP1.addListener('click', function(){
+				infowindow.open(map, mP1);
+			});
+
+			mP2 = new google.maps.Marker({
+				position: p2,
+				icon: iconBase + 'pantai.svg',
+				map: map,
+				title: 'pantai'
+			});
+			mP2.addListener('click', function(){
+				infowindow.open(map, mP2);
+			});
+
+			markerMuseum = new google.maps.Marker({
+				position: museum,
+				icon: iconBase + 'museum.svg',
+				map: map,
+				title: 'pantai'
+			});
+			markerMuseum.addListener('click', function(){
+				infowindow.open(map, markerMuseum);
+			});
+
+			mM1 = new google.maps.Marker({
+				position: m1,
+				icon: iconBase + 'museum.svg',
+				map: map,
+				title: 'pantai'
+			});
+			mM1.addListener('click', function(){
+				infowindow.open(map, mM1);
+			});
+
+			mM2 = new google.maps.Marker({
+				position: m2,
+				icon: iconBase + 'museum.svg',
+				map: map,
+				title: 'pantai'
+			});
+			mM2.addListener('click', function(){
+				infowindow.open(map, mM2);
+			});
+
+			markerCurug = new google.maps.Marker({
+				position: curug,
+				icon: iconBase + 'air-terjun.svg',
+				map: map,
+				title: 'air Terjun'
+			});
+			markerCurug.addListener('click', function(){
+				infowindow.open(map, markerCurug);
+			});
+
+			mC1 = new google.maps.Marker({
+				position: c1,
+				icon: iconBase + 'air-terjun.svg',
+				map: map,
+				title: 'air Terjun'
+			});
+			mC1.addListener('click', function(){
+				infowindow.open(map, mC1);
+			});
+
+			mC2 = new google.maps.Marker({
+				position: c2,
+				icon: iconBase + 'air-terjun.svg',
+				map: map,
+				title: 'air Terjun'
+			});
+			mC2.addListener('click', function(){
+				infowindow.open(map, mC2);
+			});
+
+			markerHutan = new google.maps.Marker({
+				position: hutan,
+				icon: iconBase + 'hutan.svg',
+				map: map,
+				title: 'air Terjun'
+			});
+			markerHutan.addListener('click', function(){
+				infowindow.open(map, markerHutan);
+			});
+
+			mH1 = new google.maps.Marker({
+				position: h1,
+				icon: iconBase + 'hutan.svg',
+				map: map,
+				title: 'air Terjun'
+			});
+			mH1.addListener('click', function(){
+				infowindow.open(map, mH1);
+			});
+
+
+
+			mH2 = new google.maps.Marker({
+				position: h2,
+				icon: iconBase + 'hutan.svg',
+				map: map,
+				title: 'air Terjun'
+			});
+			mH2.addListener('click', function(){
+				infowindow.open(map, mH2);
+			});
+		}
+
+		function hide(){
+			markerOne.setMap(null);
+			mD1.setMap(null);
+			markerGunung.setMap(null);
+			markerTaman.setMap(null);
+			markerPantai.setMap(null);
+			markerMuseum.setMap(null);
+			markerCurug.setMap(null);
+			markerHutan.setMap(null);
+			mG1.setMap(null);
+			mG2.setMap(null);
+			mT1.setMap(null);
+			mT2.setMap(null);
+			mP1.setMap(null);
+			mP2.setMap(null);
+			mM1.setMap(null);
+			mM2.setMap(null);
+			mC1.setMap(null);
+			mC2.setMap(null);
+			mH1.setMap(null);
+			mH2.setMap(null);
+		}
+
+		function show(){
+			markerOne.setMap(map);
+			mD1.setMap(map);
+			markerGunung.setMap(map);
+			markerTaman.setMap(map);
+			markerPantai.setMap(map);
+			markerMuseum.setMap(map);
+			markerCurug.setMap(map);
+			markerHutan.setMap(map);
+			mG1.setMap(map);
+			mG2.setMap(map);
+			mT1.setMap(map);
+			mT2.setMap(map);
+			mP1.setMap(map);
+			mP2.setMap(map);
+			mM1.setMap(map);
+			mM2.setMap(map);
+			mC1.setMap(map);
+			mC2.setMap(map);
+			mH1.setMap(map);
+			mH2.setMap(map);
+		}
+
+		function remove(){
+			$("#curug").removeClass("wow");
+			$("#semua").removeClass("wow");
+			$("#danau").removeClass("wow");
+			$("#gunung").removeClass("wow");
+			$("#taman").removeClass("wow");
+			$("#pantai").removeClass("wow");
+			$("#museum").removeClass("wow");
+			$("#hutan").removeClass("wow");
+		}
+
+		function semua(semua){
+			if(semua.getAttribute("value") == "2"){
+				show();
+				// semua.setAttribute("value", "2");
+				remove()
+				$("#semua").addClass("wow");
+			}
+		}
+
+
+		function danau(danau){
+			if(danau.getAttribute("value") == "2"){
+				// alert("aa");
+				hide();
+				markerOne.setMap(map);
+				mD1.setMap(map);
+				// danau.setAttribute("value", "1");
+				remove()
+				$(danau).addClass("wow");
+			}
+		}
+
+		function gunung(gunung){
+			if(gunung.getAttribute("value") == "2"){
+				// alert("aa");
+				hide()
+				markerGunung.setMap(map);
+				mG1.setMap(map);
+				mG2.setMap(map);
+				// gunung.setAttribute("value", "1");
+				remove()
+				$(gunung).addClass("wow");
+			}
+		}
+
+		function taman(taman){
+			if(taman.getAttribute("value") == "2"){
+				// alert("aa");
+				hide()
+				markerTaman.setMap(map);
+				mT1.setMap(map);
+				mT2.setMap(map);
+				// taman.setAttribute("value", "1");
+				remove()
+				$(taman).addClass("wow");
+			}
+		}
+
+		function pantai(pantai){
+			if(pantai.getAttribute("value") == "2"){
+				// alert("aa");
+				hide()
+				markerPantai.setMap(map);
+				mP1.setMap(map);
+				mP2.setMap(map);
+				// pantai.setAttribute("value", "1");
+				remove()
+				$(pantai).addClass("wow");
+			}
+		}
+
+		function museum(museum){
+			if(museum.getAttribute("value") == "2"){
+				// alert("aa");
+				hide()
+				markerMuseum.setMap(map);
+				mM1.setMap(map);
+				mM2.setMap(map);
+				// museum.setAttribute("value", "1");
+				remove()
+				$(museum).addClass("wow");
+			}
+		}
+
+		function curug(curug){
+			if(curug.getAttribute("value") == "2"){
+				// alert("aa");
+				hide()
+				markerCurug.setMap(map);
+				mC1.setMap(map);
+				// curug.setAttribute("value", "1");
+				remove()
+				$(curug).addClass("wow");
+			}
+		}
+
+		function hutan(hutan){
+			if(hutan.getAttribute("value") == "2"){
+				// alert("aa");
+				hide()
+				markerHutan.setMap(map);
+				mH1.setMap(map);
+				mH2.setMap(map);
+				// hutan.setAttribute("value", "1");
+				remove()
+				$(hutan).addClass("wow");
+			}
+		}
+
+	</script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHjhhv75Vy8w8Cilt1E4V_xelZ1BVGWl0&callback=initMap">
+</script>
+</body>
+</html>

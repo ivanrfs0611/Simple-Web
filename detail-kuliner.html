@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Kuliner - TravelNusantara</title>
+
+
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/custom-grid.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slider.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/tabs.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+    <link rel="shortcut icon" href="assets/img/Favicon.png">
+
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+      * element that contains the map. */
+      #map {
+       width: 100%;
+       height: 100%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .img-kecil{
+        width: 74px;
+        height: 74px;
+        border-radius: 5px;
+        margin-right: 30px;
+    }
+    .info-window > .deskripsi > a {
+        font-family: 'Nunito';
+        font-size: 13px;
+        text-align: right;
+        color: #0086cd;
+        text-decoration: none;
+    }
+    #floating-panel {
+        position: absolute;
+        top: 71px;
+        left: 5%;
+        z-index: 5;
+        background-color: #fff;
+        /* padding: 5px; */
+        /* border: 1px solid #999; */
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        /* padding-left: 10px; */
+        width: 251px;
+        display: inline;
+        border-radius: 4px;
+    }
+    .floating-item-left{
+        height: 125px;
+        width: 124px;
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: #dfe4e9;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #dfe4e9;
+        float: left;
+    }
+    .floating-item-left:hover{
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        border-bottom-color: #328ad4;
+        cursor: pointer;
+    }
+    .floating-item-left > img {
+        margin-top: 34px;
+    }
+    .floating-item-right{
+        height: 125px;
+        width: 124px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #dfe4e9;
+        float: right;
+    }
+    .floating-item-right:hover{
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        border-bottom-color: #328ad4;
+        cursor: pointer;
+    }
+    .floating-item-right > img {
+        margin-top: 34px;
+    }
+</style>
+</style>
+
+</head>
+<body id="header">  
+
+    <nav>
+        <!-- Topbar -->
+        <div id="topbar">
+            <div class="container">
+                <div class="flex">
+                    <div class="topbar">
+                        <img src="assets/img/icon/close-envelope.svg"> <span>nusantaratravel@gmail.com</span>
+                        <img src="assets/img/icon/phone-receiver.svg"> <span>081228258356</span>
+                    </div>
+                    <div class="topbar right">
+                        <img src="assets/img/icon/indonesia.svg">
+                        <select>
+                            <option value="IND">IND</option>
+                            <option value="IND">ENG</option>
+                        </select>
+                        <label for="modal-trigger" class="open-modal"><img src="assets/img/icon/user-shape.svg">Masuk</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Topbar -->
+        <!-- navbar -->
+        <div class="sticky">
+            <div class="menu-container">
+                <div class="container">
+                    <a href="index.html" class="logo"><img src="assets/img/logo.png"></a>
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn">
+                        <span class="navicon"></span>
+                    </label>
+                    <ul class="menu">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="tentang.html">Tentang</a></li>
+                        <li><a href="fiture.html">Fitur</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                        <li><a href="peta.html">Peta</a></li>
+                        <li><a href="berita.html">Berita</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /navbar -->
+    </nav>
+
+
+    <!-- header -->
+    <header id="galeri-page" class="detail-kuliner-bg">
+        <div class="container">
+            <div class="breadcrum-detail">
+                <h1 class="wow fadeInUp">Mendoan</h1>
+                <p class="wow fadeInDown">Home <img src="assets/img//icon/chev.svg"> Kuliner <img src="assets/img//icon/chev.svg"> Mendoan</p>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <section id="content-detail-wisata">
+        <div class="panel-menu-detail">
+          <div class="container">
+              <div class="row">
+                  <div class="grid-web-8">
+                    <div class="tab">
+                      <button class="tablinks active" onclick="bukaTab(event, 'Informasi')">Informasi</button>
+                      <button class="tablinks" onclick="bukaTab(event, 'Peta')">Peta</button>
+                      <button class="tablinks" onclick="bukaTab(event, 'Video')">Video</button>
+                      <button class="tablinks" onclick="bukaTab(event, 'Foto')">Foto</button>
+                      <button class="tablinks" onclick="bukaTab(event, 'Review')">Review</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+    <div class="row">
+        <div class="grid-web-8 tabcontent active wow fadeIn" id="Informasi" style="padding-right: 120px;">
+            <div class="desc-wisata">   
+                <p>Kata mendoan dianggap berasal dari bahasa Banyumasan, mendo yang berarti setengah matang atau lembek. Mendoan berarti memasak dengan minyak panas yang banyak dengan cepat sehingga masakan tidak matang benar. Bahan makanan yang paling sering dibuat mendoan adalah tempe dan tahu.</p>
+
+                <p>Mendoan tempe disajikan dalam keadaan panas disertai dengan cabe rawit atau sambal kecap. Mendoan tempe dapat dijadikan sebagai lauk makan ataupun makanan ringan untuk menemani minum teh atau kopi saat santai.</p>
+
+                <p>Mendoan tempe mudah ditemui di warung-warung tradisional di wilayah eks karesidenan Banyumas dan Tegal. Untuk wilayah Banyumas, para pelancong membeli oleh-oleh mendoan tempe di daerah Sawangan, Purwokerto, yang merupakan pusat jajanan khas Purwokerto.</p>
+
+                <p>Rasa yang "unik" membuat makanan ini menyebar hingga ke luar daerah Banyumas. Tempe Mendoan dapat ditemui di kota-kota besar Jawa Tengah, bahkan hingga ke Jakarta.</p>
+
+                <p>Di kota-kota lain di Jawa Tengah seperti Semarang, Mendoan lebih merujuk ke tempe goreng tepung, atau di daerah lain disebut tempe kemul, di mana tempe yang berbentuk tipis itu hanya irisan. Hal ini sedikit menimbulkan kerancuan, terutama bagi pendatang dari Jawa Tengah bagian barat. Mendoan purwokerto berbeda dengan mendoan dari beberapa kota di wilayah jawa tengah, lebih terasa basah minyaknya. Mendoan khas purwokerto lebih nikmat apabila di sajikan dalam keadaan hangat.</p>
+
+                <p>Makanan ini dapat dibuat tanpa memperhatikan besarnya tempe atau banyaknya tepung. Mendoan tanpa tempe atau mendoan dari bekas sisia tepung juga nikmat disantap.</p>
+
+                <h4>Bahan :</h4>
+                <ul class="list">
+                    <li>300 g tempe, iris lebar tipis 10x15 cm.</li>
+                    <li>2 batang daun bawang, iris halus.</li>
+                    <li>100 g tepung beras.</li>
+                    <li>1 sdm tepung terigu.</li>
+                    <li>125 ml air.</li>
+                    <li>Minyak Goreng.</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="Peta" class="grid-web-8 tabcontent">
+            <div class="desc-wisata">
+                <p>Rasa yang "unik" membuat makanan ini menyebar hingga ke luar daerah Banyumas. Tempe Mendoan dapat ditemui di kota-kota besar Jawa Tengah, bahkan hingga ke Jakarta.</p>
+            </div>
+            <div id="map"></div>
+            <div class="desc-wisata">
+                <p>Tempat menarik sekitar Danau Toba</p>
+            </div>
+        </div>
+
+        <div id="Video" class="grid-web-8 tabcontent" style="padding-right: 120px;">
+            <div class="desc-wisata">
+                <p> Pemerintah menetapkan Danau Toba sebagai salah satu destinasi wisata prioritas. Setiap tahun, sekitar 250 ribu wisatawan mengunjungi danau ini. Pada 2019, pemerintah menargetkan satu juta wisatawan datang tiap tahun dan menghasilkan devisa USD1 miliar.</p>  
+
+                <video id="berita_video" controls style="width: 100%;border-radius: 10px;">
+                    <source src="assets/img/video/raja ampat.mp4" type="video/mp4">
+                        <source src="assets/img/video/raja ampat.mp4" type="video/mkv">
+                            Your browser does not support the video tag.
+                        </video> 
+                    </div>
+                </div>
+
+                <div id="Foto" class="grid-web-8 tabcontent">
+                    <div class="desc-wisata">
+                        <p>Indonesia memiliki beragam keindahan alam luar biasa yang tidak dimiliki negara-negara lainnya. Salah satunya, yang bisa Anda jadikan destinasi liburan tahun ini adalah Danau Toba.</p>  
+                        <div class="foto-detail">
+                            <div class="row">
+                                <div class="grid-web-4">
+                                    <img src="assets/img/detail/detailwisata-1.png" class="img-responsive">   
+                                </div>
+                                <div class="grid-web-4">
+                                    <img src="assets/img/detail/detailwisata-2.png" class="img-responsive">   
+                                </div>
+                                <div class="grid-web-4">
+                                    <img src="assets/img/detail/detailwisata-3.png" class="img-responsive">   
+                                </div>
+                                <div class="grid-web-4">
+                                    <img src="assets/img/detail/detailwisata-4.png" class="img-responsive">   
+                                </div>
+                                <div class="grid-web-4">
+                                    <img src="assets/img/detail/detailwisata-5.png" class="img-responsive">   
+                                </div>
+                                <div class="grid-web-4">
+                                    <img src="assets/img/detail/detailwisata-6.png" class="img-responsive">   
+                                </div>
+                                <div class="grid-web-4">
+                                    <img src="assets/img/detail/detailwisata-7.png" class="img-responsive">   
+                                </div>
+                                <div class="grid-web-4">
+                                    <img src="assets/img/detail/detailwisata-8.png" class="img-responsive">   
+                                </div>
+                                <div class="grid-web-4">
+                                    <img src="assets/img/detail/detailwisata-9.png" class="img-responsive">   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Review" class="grid-web-8 tabcontent">
+                </div>
+
+
+                <div class="grid-web-4">
+                    <div class="rightbar">
+
+                        <div class="rightbar-top">
+                            <h2>Detail Tempat</h2>  
+                        </div>
+                        <div class="rightbar-content">
+                            <h5>Bagikan :</h5>
+                            <a href=""><img src="assets/img/icon/share1.svg" class="share"></a>
+                            <a href=""><img src="assets/img/icon/share2.svg" class="share"></a>
+                            <a href=""><img src="assets/img/icon/share3.svg" class="share"></a>
+                            <a href=""><img src="assets/img/icon/share4.svg" class="share"></a>
+                            <a href=""><img src="assets/img/icon/share5.svg" class="share"></a>
+
+                            <div class="detail-tempat">
+                                <h5>DETAIL TEMPAT</h5>
+                                <div class="left-desc grid-web-6 no-padding">
+                                    <p>Type Tempat</p>
+                                    <p>Kategori</p>
+                                    <p>Ratting</p>
+                                    <p>Tiket Masuk</p>    
+                                </div>
+                                <div class="right-desc grid-web-6 no-padding">
+                                    <p>Rekreasi Keluarga</p>
+                                    <p>Pariwisata</p>
+                                    <p>
+                                        <img src="assets/img/icon/star-o.svg">
+                                        <img src="assets/img/icon/star-o.svg">
+                                        <img src="assets/img/icon/star-o.svg">
+                                        <img src="assets/img/icon/star-o.svg">
+                                        <img src="assets/img/icon/star-o.svg">
+                                    </p>
+                                    <p>Rp 45.000</p>    
+                                </div>
+                            </div>
+                            <label for="modal-booking" class="btn-booking">BOOKING</label>
+                        </div>
+
+
+                        <h5 class="harga">WISATA LAIN</h5>
+                        <!-- list-artikel -->
+                        <div class="list-artikel flex">
+                            <div class="img-berita"><img src="assets/img/artikel1.png"></div>
+                            <div class="desc-berita">
+                                <a href=""><h6>Taman Nasonal Komodo</h6></a>
+                                <span><img src="assets/img/icon/marker.svg"> Pulau Komodo</span>
+                                <br>
+                                <span><img src="assets/img/icon/star-o.svg"></span>
+                                <span><img src="assets/img/icon/star-o.svg"></span>
+                                <span><img src="assets/img/icon/star-o.svg"></span>
+                                <span><img src="assets/img/icon/star-g.svg"></span>
+                                <span><img src="assets/img/icon/star-g.svg"></span>
+                            </div>
+                        </div>
+                        <!-- /list-artikel -->
+                        <!-- list-artikel -->
+                        <div class="list-artikel flex">
+                            <div class="img-berita"><img src="assets/img/artikel2.png"></div>
+                            <div class="desc-berita">
+                                <a href=""><h6>Candi Borobudur</h6></a>
+                                <span><img src="assets/img/icon/marker.svg"> Magelang</span>
+                                <br>
+                                <span><img src="assets/img/icon/star-o.svg"></span>
+                                <span><img src="assets/img/icon/star-o.svg"></span>
+                                <span><img src="assets/img/icon/star-o.svg"></span>
+                                <span><img src="assets/img/icon/star-g.svg"></span>
+                                <span><img src="assets/img/icon/star-g.svg"></span>
+                            </div>
+                        </div>
+                        <!-- /list-artikel -->
+                        <!-- list-artikel -->
+                        <div class="list-artikel flex">
+                            <div class="img-berita"><img src="assets/img/artikel3.png"></div>
+                            <div class="desc-berita">
+                                <a href=""><h6>Wae Kambas</h6></a>
+                                <span><img src="assets/img/icon/marker.svg"> Lampung</span>
+                                <br>
+                                <span><img src="assets/img/icon/star-o.svg"></span>
+                                <span><img src="assets/img/icon/star-o.svg"></span>
+                                <span><img src="assets/img/icon/star-o.svg"></span>
+                                <span><img src="assets/img/icon/star-g.svg"></span>
+                                <span><img src="assets/img/icon/star-g.svg"></span>
+                            </div>
+                        </div>
+                        <!-- /list-artikel -->
+
+                        <h5 class="harga">BERLANGGANAN</h5>
+                        <p>Daftarkan emailmu sekarang untuk berlangganan</p>
+                        <form>
+                            <input type="email" name="" class="subscribe" placeholder="Masukan Email Anda" />
+                            <button class="btn-subscribe">KIRIM</button>
+                        </form>
+                    </div>  
+                </div>  
+            </div>  
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="grid-web-4">
+                    <div class="logo-footer"><img src="assets/img/logo-footer.png"></div>
+                    <div class="desc-footer">
+                        <p>Harga Pas, Anda Bebas, Hati Puas.<br>
+                        Pesan tiket wisatamu sekarang di Travel Nusantara</p>
+                    </div>
+                </div>
+                <div class="grid-web-4">
+                    <h4>KATEGORI WEBSITE</h4>
+                    <div class="row">
+                        <div class="grid-web-4">
+                            <div class="kategori-footer">
+                                <a href="">
+                                    <img src="assets/img/wisata/1.jpg" class="img-kategori-footer">
+                                    <div class="overlay-footer">
+                                        <p>Wisata</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid-web-4">
+                            <div class="kategori-footer">
+                                <a href="">
+                                    <img src="assets/img/kuliner/2.jpg" class="img-kategori-footer">
+                                    <div class="overlay-footer">
+                                        <p>Kuliner</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid-web-4">
+                            <div class="kategori-footer">
+                                <a href="">
+                                    <img src="assets/img/penginapan/3.jpg" class="img-kategori-footer">
+                                    <div class="overlay-footer">
+                                        <p>Hotel</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid-web-4">
+                            <div class="kategori-footer">
+                                <a href="">
+                                    <img src="assets/img/camping/6.jpg" class="img-kategori-footer">
+                                    <div class="overlay-footer">
+                                        <p>camping</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid-web-4">
+                            <div class="kategori-footer">
+                                <a href="">
+                                    <img src="assets/img/event/6.jpg" class="img-kategori-footer">
+                                    <div class="overlay-footer">
+                                        <p>Event</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid-web-4">
+                            <div class="kategori-footer">
+                                <a href="">
+                                    <img src="assets/img/berita/1.jpeg" class="img-kategori-footer">
+                                    <div class="overlay-footer">
+                                        <p>Berita</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-web-4" style="padding-left: 50px;">
+                    <h4>KONTAK KAMI</h4>
+                    <div class="address">
+                        <p>Jl DI.Panjaitan 128, Purwokerto Selatan</p>
+                        <p>Phone: (081) 228258356 </p>
+                        <p>E-Mail: simalakamateam@gmail.com</p> 
+                    </div>
+                    <div class="social">
+                        <a href=""><img src="assets/img/icon/fb.svg"></a>
+                        <a href=""><img src="assets/img/icon/ig.svg"></a>
+                        <a href=""><img src="assets/img/icon/ftwitter.svg"></a>
+                        <a href=""><img src="assets/img/icon/fgoogle-plus.svg"></a>
+                        <a href=""><img src="assets/img/icon/fpinterest.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="chat-container"> 
+        <div id="chat-circle" class="btn btn-raised">
+            <div id="chat-overlay"></div>
+            <img src="assets/img/icon/komentar.svg">
+        </div>
+
+        <div class="chat-box" id="chat-show">
+            <div class="chat-box-header">
+                <img src="assets/img/logo-footer.png">
+                <span class="chat-box-toggle">x</span>
+            </div>
+            <div class="chat-box-body">
+                <div class="chat-box-overlay">   
+                </div>
+                <div class="chat-logs">
+                    <div id="cm-msg-2" class="chat-msg user">          
+                        <span class="msg-avatar">            
+                            <img src="https://image.crisp.im/avatar/operator/196af8cc-f6ad-4ef7-afd1-c45d5231387c/240/?1483361727745">         
+                        </span>          
+                        <div class="cm-msg-text">
+                            Halo ada yg bisa saya bantu :)          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">      
+                <form>
+                    <input type="text" id="chat-input" placeholder="Kirimkan pesan..." style="display: block;" />
+                    <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">Kirim</i></button>
+                </form>      
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL BOOKING -->
+    <div class="modal">
+        <input id="modal-booking" class="checkbox" type="checkbox">
+        <div class="modal-overlay">
+            <label for="modal-booking" class="o-close"></label>
+            <div class="modal-wrap">
+                <div class="box-booking">
+                    <p class="judul">Detail Pesanan</>
+                    <p>Silahkan isi kontak form di bawah ini:</p>
+                    <span class="break-line"></span>
+
+                    <div class="row">
+                        <div class="grid-web-12">
+                            <div class="grid-web-6">
+                                <label>Nama Pemesanan</label>
+                                <input type="text" name="nama_pemesanan" class="input-control" placeholder="Nama Pemesanan" />
+                                <label>Nomor HP</label>
+                                <input type="text" name="" class="input-control" placeholder="Nomor HP" />
+                            </div>
+                            <div class="grid-web-6">
+                                <label>ID (SIM, KTP, atau lainnya)</label>
+                                <input type="text" name="nama_pemesanan" class="input-control" placeholder="ID (SIM, KTP, atau lainnya)" />
+                                <label>Jumlah Pemesan</label>
+                                <input type="text" name="" class="input-control" placeholder="1 Orang" />
+                            </div>
+                            <div class="grid-web-12">
+                               <label>Alamat</label>
+                               <textarea type="text" name="" class="input-control" placeholder="Alamat" style="height: 150px;"></textarea>
+                           </div>
+                           <div class="grid-web-8"></div>
+                           <div class="grid-web-4">
+                               <button class="btn-booking">KIRIM</button>
+                           </div>
+                       </div>
+                   </div>
+
+
+               </div>
+           </div>
+       </div>
+   </div>
+   <!-- ./ MODAL BOOKING -->
+    <!-- LOGIN REGISTER MODAL -->
+    <div class="modal">
+        <input id="modal-trigger" class="checkbox" type="checkbox">
+        <div class="modal-overlay">
+            <label for="modal-trigger" class="o-close"></label>
+            <div class="modal-wrap">
+                <div id="login">
+                    <div class="tabs-panel">
+
+                        <!-- Input Tabs -->
+                        <input type="radio" id="test1" name="tab" checked="checked" />
+                        <input type="radio" id="test2" name="tab" />
+                        <!-- End Input Tabs -->
+
+                        <!-- Start Tabs -->
+                        <div class="tabs">
+                            <div class="logo-modal">
+                                <img src="assets/img/logo-t.png" class="logo-t">
+                                <img src="assets/img/logo.png" class="logo">
+                            </div>
+                            <div class="flex">
+                                <div class="tab">
+                                    <label for="test1" onclick>
+                                        <div class="text text-center">MASUK</div>
+                                    </label>
+                                </div>
+                                <div class="tab">
+                                    <label for="test2" onclick>
+                                        <div class="text text-center">DAFTAR</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Tabs -->
+
+                        <div class="separator"></div>
+
+                        <!-- Start Panels -->
+                        <div class="panels">
+
+                            <!-- Start Tab Panel -->
+                            <div class="tab-panel" id="panel1">
+                                <div class="login-body">
+                                    <from>
+                                        <label>Email Lengkap</label>
+                                        <input type="text" name="" class="input-control" placeholder="example@email.com" />
+                                        <label>Kata Sandi</label>
+                                        <input type="text" name="" class="input-control" placeholder="*******" />
+                                        <button class="btn-subscribe">DAFTAR</button>
+                                        <div class="sparator"><span>atau</span></div>
+                                        <button class="btn-subscribe facebook"><img src="assets/img/icon/fb-login.svg">MASUK DENGAN FACEBOOK</button>
+                                        <button class="btn-subscribe google"><img src="assets/img/icon/google.svg">MASUK DENGAN GOOGLE</button>
+                                    </from>
+                                </div>
+                            </div>
+                            <!-- End Tab Panel -->
+
+                            <!-- Start Tab Panel -->
+                            <div class="tab-panel" id="panel2">
+                                <div class="login-body">
+                                    <from>
+                                        <label>Nama Lengkap</label>
+                                        <input type="text" name="" class="input-control" placeholder="example" />
+                                        <label>Email Lengkap</label>
+                                        <input type="text" name="" class="input-control" placeholder="example@email.com" />
+                                        <label>Kata Sandi</label>
+                                        <input type="text" name="" class="input-control" placeholder="*******" />
+                                        <button class="btn-subscribe">DAFTAR</button>
+                                        <div class="sparator"><span>atau</span></div>
+                                        <button class="btn-subscribe facebook"><img src="assets/img/icon/fb-login.svg">MASUK DENGAN FACEBOOK</button>
+                                        <button class="btn-subscribe google"><img src="assets/img/icon/google.svg">MASUK DENGAN GOOGLE</button>
+                                    </from>
+                                </div>
+                            </div>
+                            <!-- End Tab Panel -->
+
+                        </div>
+                        <!-- End Panels -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /LOGIN REGISTER MODAL -->
+
+
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/chat-custom.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+
+    <!-- open chat -->
+    <script>
+        $(document).ready(function () {
+            setTimeout(function(){
+                $('#chat-show').fadeIn(500);
+            }, 500);
+        });
+    </script>
+    <!-- open chat -->
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- TABS -->
+    <script>
+        function bukaTab(evt, tabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+<!-- TABS -->
+<script>
+        var map;
+        var markerOne;
+        var markerGunung;
+        var markerTaman;
+        var markerPantai;
+        var markerMuseum;
+        var markerCurug;
+        var markerHutan;
+        function initMap() {
+
+            var iconBase = 'ico/';
+
+            var lokasine = {lat: -7.4105261,lng: 109.2394419};
+            var nomer1 = {lat: -7.4091883,lng: 109.2507605};
+            var nomer2 = {lat:-7.4112231,lng:109.236414};
+            var nomer3 = {lat:-7.4141185, lng:109.2363599};
+            var nomer4 = {lat:-7.4217534,lng:109.2317539};
+          
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: lokasine
+            });
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentOne
+            });
+              var contentOne = '<div class="info-window grid-web-12" style=" margin:0; padding:0;">'+
+            '<div class="grid-web-3" style="margin:0; padding:0;">'+
+            '<img src="ico/download.jpg" alt="image" class="img-kecil">'+
+            '</div>'+
+            '<div class="deskripsi grid-web-9">'+
+            '<h2>Distro Clothing</h2>'+
+            '<label><img src="ico/clock-circular-outline.svg" alt="clock"> Pukul 08:00 - 20:00</label><br/>'+
+            '<a href="">Lihat Selengkapnya</a>'+
+            '</div></div>';
+
+            lokasine = new google.maps.Marker({
+                position: lokasine,
+                icon: iconBase + 'lokasine.svg',
+                map: map,
+                title: 'lokasine'
+            });
+            lokasine.addListener('click', function(){
+                infowindow.open(map, lokasine);
+            });
+
+            nomer1 = new google.maps.Marker({
+                position: nomer1,
+                icon: iconBase + 'nomer1.svg',
+                map: map,
+                title: 'Destinasi Selanjutnya'
+            });
+            nomer1.addListener('click', function(){
+                infowindow.open(map, nomer1);
+            });
+            nomer2 = new google.maps.Marker({
+                position: nomer2,
+                icon: iconBase + 'nomer2.svg',
+                map: map,
+                title: 'Destinasi Selanjutnya'
+            });
+            nomer2.addListener('click', function(){
+                infowindow.open(map, nomer2);
+            });
+             nomer3 = new google.maps.Marker({
+                position: nomer3,
+                icon: iconBase + 'nomer3.svg',
+                map: map,
+                title: 'Destinasi Selanjutnya'
+            });
+            nomer3.addListener('click', function(){
+                infowindow.open(map, nomer3);
+            });
+             nomer4 = new google.maps.Marker({
+                position: nomer4,
+                icon: iconBase + 'nomer4.svg',
+                map: map,
+                title: 'Destinasi Selanjutnya'
+            });
+            nomer4.addListener('click', function(){
+                infowindow.open(map, nomer4);
+            });
+
+
+        }
+
+        function hide(){
+            markerOne.setMap(null);
+            markerGunung.setMap(null);
+            markerTaman.setMap(null);
+            markerPantai.setMap(null);
+            markerMuseum.setMap(null);
+            markerCurug.setMap(null);
+            markerHutan.setMap(null);
+        }
+
+        function show(){
+            markerOne.setMap(map);
+            markerGunung.setMap(map);
+            markerTaman.setMap(map);
+            markerPantai.setMap(map);
+            markerMuseum.setMap(map);
+            markerCurug.setMap(map);
+            markerHutan.setMap(map);
+        }
+
+        function remove(){
+            $("#curug").removeClass("wow");
+            $("#semua").removeClass("wow");
+            $("#danau").removeClass("wow");
+            $("#gunung").removeClass("wow");
+            $("#taman").removeClass("wow");
+            $("#pantai").removeClass("wow");
+            $("#museum").removeClass("wow");
+            $("#hutan").removeClass("wow");
+        }
+
+        function semua(semua){
+            if(semua.getAttribute("value") == "2"){
+                show();
+                // semua.setAttribute("value", "2");
+                remove()
+                $("#semua").addClass("wow");
+            }
+        }
+
+
+        function danau(danau){
+            if(danau.getAttribute("value") == "2"){
+                // alert("aa");
+                hide();
+                markerOne.setMap(map);
+                // danau.setAttribute("value", "1");
+                remove()
+                $(danau).addClass("wow");
+            }
+        }
+
+        function gunung(gunung){
+            if(gunung.getAttribute("value") == "2"){
+                // alert("aa");
+                hide()
+                markerGunung.setMap(map);
+                // gunung.setAttribute("value", "1");
+                remove()
+                $(gunung).addClass("wow");
+            }
+        }
+
+        function taman(taman){
+            if(taman.getAttribute("value") == "2"){
+                // alert("aa");
+                hide()
+                markerTaman.setMap(map);
+                // taman.setAttribute("value", "1");
+                remove()
+                $(taman).addClass("wow");
+            }
+        }
+
+        function pantai(pantai){
+            if(pantai.getAttribute("value") == "2"){
+                // alert("aa");
+                hide()
+                markerPantai.setMap(map);
+                // pantai.setAttribute("value", "1");
+                remove()
+                $(pantai).addClass("wow");
+            }
+        }
+
+        function museum(museum){
+            if(museum.getAttribute("value") == "2"){
+                // alert("aa");
+                hide()
+                markerMuseum.setMap(map);
+                // museum.setAttribute("value", "1");
+                remove()
+                $(museum).addClass("wow");
+            }
+        }
+
+        function curug(curug){
+            if(curug.getAttribute("value") == "2"){
+                // alert("aa");
+                hide()
+                markerCurug.setMap(map);
+                // curug.setAttribute("value", "1");
+                remove()
+                $(curug).addClass("wow");
+            }
+        }
+
+        function hutan(hutan){
+            if(hutan.getAttribute("value") == "2"){
+                // alert("aa");
+                hide()
+                markerHutan.setMap(map);
+                // hutan.setAttribute("value", "1");
+                remove()
+                $(hutan).addClass("wow");
+            }
+        }
+
+    </script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1TkAEvVgYnPA2HAem8NZZPudACUTykvY&callback=initMap"></script>
+
+</body>
+</html>

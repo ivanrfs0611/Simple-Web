@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="57" viewBox="0 0 30 57">
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(1.667 30.475)">
+            <ellipse cx="13.056" cy="13.262" fill="#24AE5F" opacity=".1" rx="6.389" ry="6.49"/>
+            <ellipse cx="13.056" cy="13.262" fill="#328AD4" opacity=".05" rx="13.056" ry="13.262"/>
+            <ellipse cx="13.056" cy="13.262" fill="#328AD4" opacity=".15" rx="3.056" ry="3.104"/>
+        </g>
+        <g>
+            <path fill="#328AD4" d="M15 0c8.135 0 14.729 6.594 14.729 14.729 0 .09 0 .179-.002.269l-.198 10.86a4.703 4.703 0 0 1-4.703 4.617 6.367 6.367 0 0 0-6.039 4.35c-2.049 6.13-3.311 9.195-3.787 9.195-.471 0-1.647-3.008-3.525-9.024a6.44 6.44 0 0 0-6.148-4.52A4.86 4.86 0 0 1 .47 25.703L.273 14.998C.125 6.864 6.598.15 14.732.002L15 0z"/>
+            <rect width="25.556" height="25.96" x="2.222" y="2.257" fill="#FFF" rx="12.778"/>
+        </g>
+        <text fill="#328AD4" font-family="Nunito-Bold, Nunito" font-size="14" font-weight="bold" letter-spacing=".14">
+            <tspan x="11" y="20">2</tspan>
+        </text>
+    </g>
+</svg>

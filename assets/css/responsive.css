@@ -1,0 +1,155 @@
+
+
+/* 48em = 768px */
+
+@media (max-width: 768px) {
+  .flex{
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .flex{
+    display: block;
+  }
+  .menu-container ul{
+    height: auto;
+    line-height: 0 !important;
+  }  
+  .menu-container ul li.active a{
+    background: #328ad4;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+  }
+  .menu-container ul li a{
+    text-align: left;
+  }
+  .menu-container .menu-icon{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  #about h1,
+  #about .desc,
+  .title, 
+  .subtitle,
+  .desc-footer{
+    width: 100%;
+  }
+  .artikel{
+    padding-left: 0;
+  }
+  footer{
+    height: auto;
+  }
+
+  .form-search{
+    display: none;
+  }
+
+  /** about **/
+  #about .about{
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+  }
+  #about .about-list .icon-about{
+    width: 100%;
+    text-align: center;
+  }
+  #about .about-list .desc-list-about{
+    width: 100%;
+    text-align: center;
+  }
+  #about .about-list .desc-list-about h2{
+    text-align: center;
+    margin-top: 20px;
+  }
+  #about .about-list .desc-list-about p{
+    text-align: center;
+  }
+
+  .galeri{
+    display: block;
+    padding: 15px;
+  }
+  #paket{
+    background-size: cover;
+  }
+  .paket{
+    margin-bottom: 40px;
+  }
+  .img{
+    margin-bottom: 15px;
+  }
+  .img img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .icon-fiture{
+    width: 100% !important;
+    height: 200px;
+    margin: 20px 0px !important;
+  }
+  .artikel{
+    padding: 40px 0px;
+  }
+  .list-artikel{
+    display: flex !important;
+  }
+  .subscribe .flex {
+    display: flex !important;
+  }
+  .input-subscribe{
+    width: 252px !important;
+    margin-right: 10px;
+  }
+  .btn-subscribe{
+    width: 120px !important;
+  }
+
+
+  /**tentang**/
+  .img-tentang{
+    margin-left: 0 !important;
+    margin-bottom: 30px;
+  }
+  .img-tentang img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .guide{
+    padding-bottom: 40px;
+  }
+  .guide .flex{
+    display: flex !important;
+  }
+  .img-guide img{
+    object-fit: cover;
+  }
+  .partner img{
+    object-fit: contain;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .menu-container li {
+    float: left;
+  }
+  .menu-container li a {
+    padding: 0px 20px;
+    transition: 0.2s ease-out;
+  }
+  .menu-container .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .menu-container .menu-icon {
+    display: none;
+  }
+}

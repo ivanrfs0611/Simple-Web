@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Beranda - TravelNusantara</title>
+
+
+	<!-- style css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/custom-grid.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/slider.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/tabs.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+	<link rel="shortcut icon" href="assets/img/Favicon.png">
+
+</head>
+<body id="header">
+	<nav>
+		<!-- Topbar -->
+		<div id="topbar">
+			<div class="container">
+				<div class="flex">
+					<div class="topbar">
+						<img src="assets/img/icon/close-envelope.svg"> <span>nusantaratravel@gmail.com</span>
+						<img src="assets/img/icon/phone-receiver.svg"> <span>081228258356</span>
+					</div>
+					<div class="topbar right">
+						<img src="assets/img/icon/indonesia.svg">
+						<select>
+							<option value="IND">IND</option>
+							<option value="IND">ENG</option>
+						</select>
+						<label id="profile" class="open-profile"><img src="assets/img/icon/user-shape.svg">Profile</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Topbar -->
+		<!-- navbar -->
+		<div class="sticky">
+			<div class="menu-container">
+				<div class="container">
+					<a href="index.html" class="logo"><img src="assets/img/logo.png"></a>
+					<input class="menu-btn" type="checkbox" id="menu-btn" />
+					<label class="menu-icon" for="menu-btn">
+						<span class="navicon"></span>
+					</label>
+					<ul class="menu">
+						<li class="active"><a href="index.html">Beranda</a></li>
+						<li><a href="tentang.html">Tentang</a></li>
+						<li><a href="fiture.html">Fitur</a></li>
+						<li><a href="galeri.html">Galeri</a></li>
+						<li><a href="peta.html">Peta</a></li>
+						<li><a href="berita.html">Berita</a></li>
+						<li><a href="kontak.html">Kontak</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /navbar -->
+	</nav>
+
+
+	<!-- header -->
+	<header id="slider">
+		<input type="radio" name="slider" id="slide1" checked />
+		<input type="radio" name="slider" id="slide2" />
+		<input type="radio" name="slider" id="slide3" />
+		<div id="slides">
+			<div id="overflow">
+				<div class="inner">
+					<article>
+						<img src="assets/img/header.png" />
+						<div class="banner">
+							<h4 class="wow slideInDown">BERKELANA MENIKMATI PESONA NUSANTARA</h4>
+							<h1 class="wow fadeInLeft">Surga Dunia Ada di Indonesia</h1>
+							<p class="wow slideInUp">Menyusuri pariwisata Indonesia yang tersimpan banyak kemegahan di dalamnya. Menikmati pesona Nusantara dari Sabang sampai Merauke.</p>
+						</div>
+					</article>
+					<article>
+						<img src="assets/img/header.png" />
+						<div class="banner">
+							<h4 class="wow slideInDown">DAPATKAN PAKET WISATA DENGAN HARGA TERBAIK</h4>
+							<h1 class="wow bounceIn">Berwisata Sesuai dengan Isi Dompet</h1>
+							<p class="wow slideInUp">Berkeliling Indonesia dengan harga minimal sesuai dengan kantong yang kamu miliki tanpa harus menguras banyak uang.</p>
+						</div>
+					</article>
+					<article>
+						<img src="assets/img/header.png" />
+						<div class="banner">
+							<h4 class="wow slideInDown">APA PUN YANG KAMU BUTUHKAN ADA DI SINI</h4>
+							<h1 class="wow bounceIn">Menghiasi Hari Kalian Dikala Gabut Melanda</h1>
+							<p class="wow slideInUp">Ikuti berbagai event yang ada di wisata Indonesia dengan beragam budaya yang ada di setiap daerahnya.</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+
+		<div id="active">
+			<label for="slide1"></label>
+			<label for="slide2"></label>
+			<label for="slide3"></label>
+		</div>
+
+		<div class="form-search">
+			<div class="container">
+				<div class="row">
+					<form action="result.html" method="">
+						<div class="grid-web-3 grid-mobile-3">
+							<p>Tujuan Perjalanan</p>
+							<input type="text" name="" placeholder="Yogyakarta">
+						</div>
+						<div class="grid-web-3 grid-mobile-3">
+							<p>Jumlah Orang </p>
+							<select>
+								<option>1 Orang</option>
+								<option>2 Orang</option>
+								<option>3 Orang</option>
+								<option>4 Orang</option>
+								<option>5 Orang</option>
+								<option>6 Orang</option>
+								<option>7 Orang</option>
+								<option>8 Orang</option>
+								<option>9 Orang</option>
+								<option>10 Orang</option>
+								<option> > 10 Orang</option>
+							</select>
+						</div>
+						<div class="grid-web-3 grid-mobile-3">
+							<p>Budget yang anda miliki</p>
+							<select>
+								<option> < Rp500.000,00</option>
+								<option>Rp500.000,00 - Rp999.999,00 </option>
+								<option>Rp1.000.000,00 - Rp1.999.999,00</option>
+								<option>Rp2.000.000,00 - Rp2.999.999,00</option>
+								<option>Rp3.000.000,00 - Rp3.999.999,00</option>
+								<option>Rp4.000.000,00 - Rp4.999.999,00</option>
+								<option>Rp5.000.000,00 - Rp5.999.999,00</option>
+								<option>Rp6.000.000,00 - Rp6.999.999,00</option>
+								<option>Rp7.000.000,00 - Rp7.999.999,00</option>
+								<option>Rp8.000.000,00 - Rp8.999.999,00</option>
+								<option>Rp9.000.000,00 - Rp10.000.000,00</option>
+								<option> > Rp10.00.000,00 </option>
+							</select>
+						</div>
+						<div class="grid-web-3 grid-mobile-3">
+							<button class="btn-subscribe btn-search">PENCARIAN</button>
+						</div>	
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- /header -->
+
+	<section id="about">
+		<div class="container">
+
+			<div class="row">
+				<div class="grid-web-6 grid-tablet-6">
+					<div class="about">
+						<div class="logo-about wow fadeInLeft" data-wow-delay="0.1s"><img src="assets/img/logo.png"></div>
+						<h1 class="wow fadeInLeft" data-wow-delay="0.3s">Selamat Datang di Website TravelNusantara</h1>
+						<div class="desc wow fadeInLeft" data-wow-delay="0.5s">
+							<p>Travel Nusantara menawarkan beragam wisata di Indonesia. Pesan tiketmu sekarang untuk mulai menyusuri beragam wisata di Indonesia. Dapatkan juga penawaran harga terbaik di sini.</p>
+						</div>
+						<a href="" class="btn wow fadeInLeft">Lihat Selengkapnya</a>
+					</div>
+				</div>
+				<div class="grid-web-6 grid-tablet-6">
+					<!-- list-about -->
+					<div class="about-list wow fadeInDown" data-wow-delay="0.1s">
+						<div class="flex">
+							<div class="icon-about">
+								<img src="assets/img/icon/palm-tree-1.svg">
+							</div>
+							<div class="desc-list-about">
+								<h2>Banyak Pilihan Wisata dan Lainnya</h2>
+								<p>Travel Nusantara menyediakan ribuan wisata mulai dari dataran tinggi hingga pesisir pantai yang ada di Indonesia.</p>
+							</div>
+						</div>
+					</div>
+					<!-- /list-about -->
+					<!-- list-about -->
+					<div class="about-list wow fadeInDown" data-wow-delay="0.3s">
+						<div class="flex">
+							<div class="icon-about">
+								<img src="assets/img/icon/bitcoin.svg">
+							</div>
+							<div class="desc-list-about">
+								<h2>Harga sesuai dengan Budget Anda</h2>
+								<p>Tidak perlu risau lagi karena Travel Nusantara tidak membuat dompet anda menipis.</p>
+							</div>
+						</div>
+					</div>
+					<!-- /list-about -->
+					<!-- list-about -->
+					<div class="about-list wow fadeInDown" data-wow-delay="0.5s">
+						<div class="flex">
+							<div class="icon-about">
+								<img src="assets/img/icon/cash.svg">
+							</div>
+							<div class="desc-list-about">
+								<h2>Kemudahan dalam Pembayaran</h2>
+								<p>Anda dapat membayar tagihan tiket wisata yang telah dipesan melalui transfer maupun tunai.</p>
+							</div>
+						</div>
+					</div>
+					<!-- /list-about -->
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<section id="fiture">
+		<div class="container">
+			<div class="row">
+
+				<!-- FITURE ICON -->
+				<div class="grid-web-12">
+					<div class="line wow fadeInLeft"></div>
+					<h1 class="title wow fadeInUp">Apa saja yang tersedia di TravelNusantara?</h1>
+					<p class="subtitle wow fadeInDown">Anda dapat menikmati keindahan wisata Indonesia beserta keberagaman budaya yang khas dari masing-masing wisata.</p>
+				</div>
+				<div class="grid-web-12">
+					<div class="content">
+						<div class="flex">
+							<a href="wisata.html">
+								<div class="icon-fiture wow fadeInDown" data-wow-delay="0.1s">
+									<img src="assets/img/icon/sun-umbrella.svg">
+									<h4>Wisata</h4>
+								</div>
+							</a>
+							<a href="kuliner.html">
+								<div class="icon-fiture wow fadeInDown" data-wow-delay="0.3s">
+									<img src="assets/img/icon/picnic.svg">
+									<h4>Kuliner</h4>
+								</div>
+							</a>
+							<a href="penginapan.html">
+								<div class="icon-fiture wow fadeInDown" data-wow-delay="0.5s">
+									<img src="assets/img/icon/hotel.svg">
+									<h4>Penginapan</h4>
+								</div>
+							</a>
+							<a href="camping.html">
+								<div class="icon-fiture wow fadeInDown" data-wow-delay="0.7s">
+									<img src="assets/img/icon/tent.svg"><h4>Camping</h4>
+								</div>
+							</a>
+							<a href="event.html">
+								<div class="icon-fiture wow fadeInDown" data-wow-delay="0.9s">
+									<img src="assets/img/icon/map.svg">
+									<h4>Event</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- /FITURE ICON -->
+			</div>
+		</div>
+	</section>
+
+	<section id="populer">
+		<div class="container">
+			<div class="row">
+				<!-- POPULER -->
+				<div class="populer">
+					<div class="grid-web-12">
+						<div class="line wow fadeInLeft"></div>
+						<h1 class="title wow fadeInUp">Wisata Terpopuler di Nusantara</h1>
+						<p class="subtitle wow fadeInDown">Kumpulan wisata yang saat ini sedang populer di Nusantara yang dapat membuat anda takjub dengan pesonanya.</p>
+					</div>
+					<div class="grid-web-12">
+						<div class="content">
+							<div class="row wow fadeInDown">
+								<div class="grid-web-3 grid-mobile-3">
+									<div class="populer-card">
+										<div class="img-populer"><img src="assets/img/destinasi/populer-1.png"></div>
+										<div class="desc-populer">
+											<h4>Danau Toba</h4>
+											<span><img src="assets/img/icon/marker.svg"> Samosir, Sumatera Utara</span>
+											<span class="rate">
+												<img src="assets/img/icon/star-o.svg">
+												<img src="assets/img/icon/star-o.svg">
+												<img src="assets/img/icon/star-o.svg">
+												<img src="assets/img/icon/star-o.svg">
+												<img src="assets/img/icon/star-g.svg">
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="grid-web-3 grid-mobile-3">
+									<div class="populer-card">
+										<div class="img-populer"><img src="assets/img/destinasi/populer-2.png"></div>
+										<div class="desc-populer">
+											<h4>Candi Borobudur</h4>
+											<span><img src="assets/img/icon/marker.svg"> Magelang, Jawa Tengah</span>
+											<span class="rate">
+												<img src="assets/img/icon/star-o.svg">
+												<img src="assets/img/icon/star-o.svg">
+												<img src="assets/img/icon/star-o.svg">
+												<img src="assets/img/icon/star-o.svg">
+												<img src="assets/img/icon/star-o.svg">
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="grid-web-3 grid-mobile-3">
+									<div class="populer-card">
+										<div class="img-populer"><img src="assets/img/destinasi/populer-3.png"></div>
+										<div class="desc-populer">
+											<h4>Raja Ampat</h4>
+											<span><img src="assets/img/icon/marker.svg">Raja Ampat, Papua</span>
+											<span class="rate">
+												<img src="assets/img/icon/star-o.svg">
+												<img src="assets/img/icon/star-o.svg">
+												<img src="assets/img/icon/star-o.svg">
+												<img src="assets/img/icon/star-o.svg">
+												<img src="assets/img/icon/star-o.svg">
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="grid-web-3 grid-mobile-3">
+									<div class="populer-card">
+										<div class="img-populer"><img src="assets/img/destinasi/populer-4.png"></div>
+										<div class="desc-populer">
+											<h4>Bali</h4>
+											<span><img src="assets/img/icon/marker.svg"> Bali</span>
+											<span class="rate">
+												<img src="assets/img/icon/star-o.svg">
+												<img src="assets/img/icon/star-o.svg">
+												<img src="assets/img/icon/star-o.svg">
+												<img src="assets/img/icon/star-o.svg">
+												<img src="assets/img/icon/star-g.svg">
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /POPULER -->
+			</div>
+		</div>
+	</section>
+
+	<section id="paket">
+		<div class="container">
+			<div class="row">
+
+				<div class="grid-web-12">
+					<div class="line"></div>
+					<h1 class="title">Paket Wisata Nusantara</h1>
+					<p class="subtitle">Ajak orang tercinta anda untuk ikut menikmati pesona Nusantara dengan tawaran harga terbaik</p>
+				</div>
+				<div class="grid-web-12">
+					<div class="content">
+						<div class="row">
+							<!-- paket card -->
+							<div class="grid-web-4">
+								<div class="paket">
+									<div class="img-paket"><img src="assets/img/destinasi/paket-1.png"></div>
+									<div class="desc-paket">
+										<a href="detail-paket.html"><h4>Paket Wisata Low</h4></a>
+										<span class="date"><img src="assets/img/icon/clock.svg"> 3 Hari</span>
+										<span class="date"><img src="assets/img/icon/user.svg"> 2 Orang</span>
+										<div class="clearfix"></div>
+										<span class="price"><strong>Rp800.000,-</strong></span>
+										<span class="rate">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-g.svg">
+											<img src="assets/img/icon/star-g.svg">
+										</span>
+									</div>
+								</div>
+							</div>
+							<!-- /paket card -->
+							<!-- paket card -->
+							<div class="grid-web-4">
+								<div class="paket">
+									<div class="img-paket"><img src="assets/img/paket2.jpg"></div>
+									<div class="desc-paket">
+										<a href="detail-paket.html"><h4>Paket Wisata Medium</h4></a>
+										<span class="date"><img src="assets/img/icon/clock.svg"> 4 Hari</span>
+										<span class="date"><img src="assets/img/icon/user.svg"> 2 Orang</span>
+										<div class="clearfix"></div>
+										<span class="price"><strong>Rp4.000.000,-</strong></span>
+										<span class="rate">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-g.svg">
+										</span>
+									</div>
+								</div>
+							</div>
+							<!-- /paket card -->
+							<!-- paket card -->
+							<div class="grid-web-4">
+								<div class="paket">
+									<div class="img-paket"><img src="assets/img/paket3.jpg"></div>
+									<div class="desc-paket">
+										<a href="detail-paket.html"><h4>Paket Wisata High</h4></a>
+										<span class="date"><img src="assets/img/icon/clock.svg"> 3 Hari</span>
+										<span class="date"><img src="assets/img/icon/user.svg"> 4 Orang</span>
+										<div class="clearfix"></div>
+										<span class="price"><strong>Rp25.000.000,-</strong></span>
+										<span class="rate">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+										</span>
+									</div>
+								</div>
+							</div>
+							<!-- /paket card -->
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<section id="galeri">
+		<div class="container">
+			<div class="row">
+
+				<div class="grid-web-12">
+					<div class="line"></div>
+					<h1 class="title">Galeri Wisata Nusantara</h1>
+					<p class="subtitle">Ragam keindahan wisata Indonesia yang memukau pandangan insan manusia terabadikan disini</p>
+				</div>
+				<div class="clearfix"></div>
+				<div class="content">
+					<div class="galeri">
+						<div class="img item--1">
+							<img src="assets/img/galeri/1.png">
+						</div>
+						<div class="img item--2">
+							<img src="assets/img/galeri/2.png">
+						</div>
+						<div class="img item--3">
+							<img src="assets/img/galeri/3.png">
+						</div>
+						<div class="img item--4">
+							<img src="assets/img/galeri/4.png">
+						</div>
+						<div class="img item--5">
+							<img src="assets/img/galeri/5.jpg">
+						</div>
+						<div class="img item--6">
+							<img src="assets/img/galeri/6.jpg">
+						</div>
+						<div class="img item--7">
+							<img src="assets/img/galeri/7.jpg">
+						</div>
+						<div class="img item--8">
+							<img src="assets/img/galeri/8.jpg">
+						</div>
+						<div class="img item--9">
+							<img src="assets/img/galeri/9.jpg">
+						</div>
+						<div class="img item--10">
+							<img src="assets/img/galeri/10.jpg">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<section id="artikel">
+		<div class="container">
+			<div class="row">
+
+				<div class="grid-web-6">
+					<div class="video-berita">
+						<h1>Video <video id="berita_video" controls>
+							<source src="assets/img/video/raja ampat.mp4" type="video/mp4">
+								<source src="assets/img/video/raja ampat.mp4" type="video/mkv">
+									Your browser does not support the video tag.
+								</video>
+								<!-- button video 
+								<div class="play-bt"></div>
+								<div class="pause-bt" style="display:none;"></div>
+								<!-- button video -->
+
+								<div class="desc-video">
+									<h4>Raja Ampat, Surga Dunia yang terletak di Papua</h4>
+									<p>Raja Ampat adalah salah satu pulau yang berada di Lambang, Kabupaten Raja Ampat, Provinsi Papua Barat. Panoramanya yang indah membuat kita terhipnotis saat berada di sana. Salah satu surga dunia yang terletak di sisi timur Indonesia.</p>
+								</div>
+							</div>
+						</div>
+						<div class="grid-web-6">
+							<div class="artikel">
+								<h1> Travel Artikel</h1>
+								<!-- list-artikel -->
+								<div class="list-artikel flex">
+									<div class="img-berita"><img src="assets/img/artikel1.png"></div>
+									<div class="desc-berita">
+										<a href=""><h4>Mau Solo Travel Tapi Masih Ragu? Ini Dia Tips-Nya!</h4></a>
+										<span><img src="assets/img/icon/clock.svg"> 07 Maret 2018</span>
+									</div>
+								</div>
+								<!-- /list-artikel -->
+								<!-- divider -->
+								<div class="divider"></div>
+								<!-- /divider -->
+								<!-- list-artikel -->
+								<div class="list-artikel flex">
+									<div class="img-berita"><img src="assets/img/artikel2.png"></div>
+									<div class="desc-berita">
+										<a href=""><h4>10 Pose Paling Mainstream saat Traveling, Kamu Juga Pernah Begini...</h4></a>
+										<span><img src="assets/img/icon/clock.svg"> 1 Maret 2018</span>
+									</div>
+								</div>
+								<!-- /list-artikel -->
+								<!-- divider -->
+								<div class="divider"></div>
+								<!-- /divider -->
+								<!-- list-artikel -->
+								<div class="list-artikel flex">
+									<div class="img-berita"><img src="assets/img/artikel3.png"></div>
+									<div class="desc-berita">
+										<a href=""><h4>Mengunjungi Elderly Park, Wisata di Bandung yang Ramah Orang Tua</h4></a>
+										<span><img src="assets/img/icon/clock.svg"> 2 Feb 2018</span>
+									</div>
+								</div>
+								<!-- /list-artikel -->
+
+								<!-- subscribe -->
+								<div class="subscribe">
+									<h1>Berlangganan</h1>
+									<p>Daftarkan emailmu sekarang untuk berlangganan</p>
+									<form>
+										<div class="flex">
+											<input type="email" name="" placeholder="Masukan Email Anda" class="input-subscribe" />
+											<button class="btn-subscribe">SUBSCRIBE</button>
+										</div>
+									</form>
+								</div>
+								<!-- /subscribe -->
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="grid-web-4">
+							<div class="logo-footer"><img src="assets/img/logo-footer.png"></div>
+							<div class="desc-footer">
+								<p>Harga Pas, Anda Bebas, Hati Puas.<br>
+								Pesan tiket wisatamu sekarang di Travel Nusantara</p>
+							</div>
+						</div>
+						<div class="grid-web-4">
+							<h4>KATEGORI WEBSITE</h4>
+							<div class="row">
+								<div class="grid-web-4">
+									<div class="kategori-footer">
+										<a href="">
+											<img src="assets/img/wisata/1.jpg" class="img-kategori-footer">
+											<div class="overlay-footer">
+												<p>Wisata</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="grid-web-4">
+									<div class="kategori-footer">
+										<a href="">
+											<img src="assets/img/kuliner/2.jpg" class="img-kategori-footer">
+											<div class="overlay-footer">
+												<p>Kuliner</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="grid-web-4">
+									<div class="kategori-footer">
+										<a href="">
+											<img src="assets/img/penginapan/3.jpg" class="img-kategori-footer">
+											<div class="overlay-footer">
+												<p>Hotel</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="grid-web-4">
+									<div class="kategori-footer">
+										<a href="">
+											<img src="assets/img/camping/6.jpg" class="img-kategori-footer">
+											<div class="overlay-footer">
+												<p>camping</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="grid-web-4">
+									<div class="kategori-footer">
+										<a href="">
+											<img src="assets/img/event/6.jpg" class="img-kategori-footer">
+											<div class="overlay-footer">
+												<p>Event</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="grid-web-4">
+									<div class="kategori-footer">
+										<a href="">
+											<img src="assets/img/berita/1.jpeg" class="img-kategori-footer">
+											<div class="overlay-footer">
+												<p>Berita</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="grid-web-4" style="padding-left: 50px;">
+							<h4>KONTAK KAMI</h4>
+							<div class="address">
+								<p>Jl DI.Panjaitan 128, Purwokerto Selatan</p>
+								<p>Phone: (081) 228258356 </p>
+								<p>E-Mail: simalakamateam@gmail.com</p> 
+							</div>
+							<div class="social">
+								<a href=""><img src="assets/img/icon/fb.svg"></a>
+								<a href=""><img src="assets/img/icon/ig.svg"></a>
+								<a href=""><img src="assets/img/icon/ftwitter.svg"></a>
+								<a href=""><img src="assets/img/icon/fgoogle-plus.svg"></a>
+								<a href=""><img src="assets/img/icon/fpinterest.svg"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div id="chat-container"> 
+				<div id="chat-circle" class="btn btn-raised">
+					<div id="chat-overlay"></div>
+					<img src="assets/img/icon/komentar.svg">
+				</div>
+
+				<div class="chat-box" id="chat-show">
+					<div class="chat-box-header">
+						<img src="assets/img/logo-footer.png">
+						<span class="chat-box-toggle">x</span>
+					</div>
+					<div class="chat-box-body">
+						<div class="chat-box-overlay">   
+						</div>
+						<div class="chat-logs">
+							<div id="cm-msg-2" class="chat-msg user">          
+								<span class="msg-avatar">            
+									<img src="https://image.crisp.im/avatar/operator/196af8cc-f6ad-4ef7-afd1-c45d5231387c/240/?1483361727745">         
+								</span>          
+								<div class="cm-msg-text">
+									Halo ada yg bisa saya bantu :)          
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="chat-input">      
+						<form>
+							<input type="text" id="chat-input" placeholder="Kirimkan pesan..." style="display: block;" />
+							<button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">Kirim</i></button>
+						</form>      
+					</div>
+				</div>
+			</div>
+
+			<!-- MODAL PROFILE WHEN CLICKED -->
+			<div class="box-profile wow fadeIn">
+				<div class="header">
+					<div class="img-profile">
+						<img src="assets/img/profile.png">
+					</div>
+					<p class="name">Panggih Giri Samudra</p>
+					<p class="point"><span class="icon-point"></span> 120 Poin</p>
+				</div>
+				<div class="footer">
+					<a href="profil.html"><span class="icon-user"></span> Lihat Profil</a>
+					<a href="index.html" class="logout">Keluar Akun</a>
+				</div>
+			</div>
+
+			<!-- MODAL PROFILE WHEN CLICKED -->
+
+
+			<!-- LOGIN REGISTER MODAL -->
+			<div class="modal">
+				<input id="modal-trigger" class="checkbox" type="checkbox">
+				<div class="modal-overlay">
+					<label for="modal-trigger" class="o-close"></label>
+					<div class="modal-wrap">
+						<div id="login">
+							<div class="tabs-panel">
+
+								<!-- Input Tabs -->
+								<input type="radio" id="test1" name="tab" checked="checked" />
+								<input type="radio" id="test2" name="tab" />
+								<!-- End Input Tabs -->
+
+								<!-- Start Tabs -->
+								<div class="tabs">
+									<div class="logo-modal">
+										<img src="assets/img/logo-t.png" class="logo-t">
+										<img src="assets/img/logo.png" class="logo">
+									</div>
+									<div class="flex">
+										<div class="tab">
+											<label for="test1" onclick>
+												<div class="text text-center">MASUK</div>
+											</label>
+										</div>
+										<div class="tab">
+											<label for="test2" onclick>
+												<div class="text text-center">DAFTAR</div>
+											</label>
+										</div>
+									</div>
+								</div>
+								<!-- End Tabs -->
+
+								<div class="separator"></div>
+
+								<!-- Start Panels -->
+								<div class="panels">
+
+									<!-- Start Tab Panel -->
+									<div class="tab-panel" id="panel1">
+										<div class="login-body">
+											<from>
+												<label>Email Lengkap</label>
+												<input type="text" name="" class="input-control" placeholder="example@email.com" />
+												<label>Kata Sandi</label>
+												<input type="text" name="" class="input-control" placeholder="*******" />
+												<button class="btn-subscribe">DAFTAR</button>
+												<div class="sparator"><span>atau</span></div>
+												<button class="btn-subscribe facebook"><img src="assets/img/icon/fb-login.svg">MASUK DENGAN FACEBOOK</button>
+												<button class="btn-subscribe google"><img src="assets/img/icon/google.svg">MASUK DENGAN GOOGLE</button>
+											</from>
+										</div>
+									</div>
+									<!-- End Tab Panel -->
+
+									<!-- Start Tab Panel -->
+									<div class="tab-panel" id="panel2">
+										<div class="login-body">
+											<from>
+												<label>Nama Lengkap</label>
+												<input type="text" name="" class="input-control" placeholder="example" />
+												<label>Email Lengkap</label>
+												<input type="text" name="" class="input-control" placeholder="example@email.com" />
+												<label>Kata Sandi</label>
+												<input type="text" name="" class="input-control" placeholder="*******" />
+												<button class="btn-subscribe">DAFTAR</button>
+												<div class="sparator"><span>atau</span></div>
+												<button class="btn-subscribe facebook"><img src="assets/img/icon/fb-login.svg">MASUK DENGAN FACEBOOK</button>
+												<button class="btn-subscribe google"><img src="assets/img/icon/google.svg">MASUK DENGAN GOOGLE</button>
+											</from>
+										</div>
+									</div>
+									<!-- End Tab Panel -->
+
+								</div>
+								<!-- End Panels -->
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /LOGIN REGISTER MODAL -->
+
+
+			<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+			<script type="text/javascript" src="assets/js/chat-custom.js"></script>
+			<script type="text/javascript" src="assets/js/index.js"></script>
+			<script type="text/javascript" src="assets/js/wow.min.js"></script>
+
+			<!-- open chat -->
+			<script>
+				$(document).ready(function () {
+					setTimeout(function(){
+						$('#chat-show').fadeIn(500);
+					}, 500);
+				});
+			</script>
+			<script>
+				$(document).ready(function(){
+					$("#profile").click(function(){
+						$(".box-profile").toggle();
+					});
+
+				});
+			</script>
+			
+			<!-- open chat -->
+
+			<script>
+				new WOW().init();
+			</script>
+
+
+
+		</body>
+		</html>

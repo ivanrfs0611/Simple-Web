@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Berita - TravelNusantara</title>
+
+
+	<!-- style css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/custom-grid.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/slider.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/tabs.css">
+
+	<link rel="shortcut icon" href="assets/img/Favicon.png">
+
+</head>
+<body id="header">	
+
+	<nav>
+		<!-- Topbar -->
+		<div id="topbar">
+			<div class="container">
+				<div class="flex">
+					<div class="topbar">
+						<img src="assets/img/icon/close-envelope.svg"> <span>nusantaratravel@gmail.com</span>
+						<img src="assets/img/icon/phone-receiver.svg"> <span>081228258356</span>
+					</div>
+					<div class="topbar right">
+						<img src="assets/img/icon/indonesia.svg">
+						<select>
+							<option value="IND">IND</option>
+							<option value="IND">ENG</option>
+						</select>
+						<label for="modal-trigger" class="open-modal"><img src="assets/img/icon/user-shape.svg">Masuk</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Topbar -->
+		<!-- navbar -->
+		<div class="sticky">
+			<div class="menu-container">
+				<div class="container">
+					<a href="index.html" class="logo"><img src="assets/img/logo.png"></a>
+					<input class="menu-btn" type="checkbox" id="menu-btn" />
+					<label class="menu-icon" for="menu-btn">
+						<span class="navicon"></span>
+					</label>
+					<ul class="menu">
+						<li><a href="index.html">Beranda</a></li>
+						<li><a href="#tentang.html">Tentang</a></li>
+						<li><a href="fiture.html">Fitur</a></li>
+						<li><a href="galeri.html">Galeri</a></li>
+						<li><a href="peta.html">Peta</a></li>
+						<li class="active"><a href="berita.html">Berita</a></li>
+						<li><a href="kontak.html">Kontak</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /navbar -->
+	</nav>
+
+
+
+	<!-- header -->
+	<header id="result">
+
+		<div class="breadcrum">
+			<h1>Hasil Pencarian Berdasarkan:</h1>
+			<p>Yogyakarta - 4 Orang - Budget Rp 1.000.000</p>
+		</div>
+
+		<div class="form-search">
+			<div class="container">
+				<div class="row">
+					<form>
+						<div class="grid-web-3 grid-mobile-3">
+							<p>Tujuan Perjalanan</p>
+							<input type="text" name="" placeholder="Yogyakarta">
+						</div>
+						<div class="grid-web-3 grid-mobile-3">
+							<p>Jumlah Orang </p>
+							<select>
+								<option>1 Orang</option>
+								<option>2 Orang</option>
+								<option>3 Orang</option>
+								<option>4 Orang</option>
+								<option>5 Orang</option>
+								<option>6 Orang</option>
+								<option>7 Orang</option>
+								<option>8 Orang</option>
+								<option>9 Orang</option>
+								<option>10 Orang</option>
+								<option> > 10 Orang</option>
+							</select>
+						</div>
+						<div class="grid-web-3 grid-mobile-3">
+							<p>Budget yang anda miliki</p>
+							<select>
+								<option> < Rp500.000,00</option>
+								<option>Rp500.000,00 - Rp999.999,00 </option>
+								<option>Rp1.000.000,00 - Rp1.999.999,00</option>
+								<option>Rp2.000.000,00 - Rp2.999.999,00</option>
+								<option>Rp3.000.000,00 - Rp3.999.999,00</option>
+								<option>Rp4.000.000,00 - Rp4.999.999,00</option>
+								<option>Rp5.000.000,00 - Rp5.999.999,00</option>
+								<option>Rp6.000.000,00 - Rp6.999.999,00</option>
+								<option>Rp7.000.000,00 - Rp7.999.999,00</option>
+								<option>Rp8.000.000,00 - Rp8.999.999,00</option>
+								<option>Rp9.000.000,00 - Rp10.000.000,00</option>
+								<option> > Rp10.00.000,00 </option>
+							</select>
+							</select>
+						</div>
+						<div class="grid-web-3 grid-mobile-3">
+							<button class="btn-subscribe btn-search">PENCARIAN</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- /header -->
+
+	<section id="content-result">
+		<div class="container">
+			<div class="row">
+
+				<div class="grid-web-3">
+					<div class="leftbar">
+						<h5>PENCARIAN</h5>
+						<input type="text" name="" placeholder="Nama Wisata, Kota, dll" class="cari" />
+
+						<h5>BERDASARKAN KATEGORI</h5>
+						<div class="flex">
+							<div class="checkbox">
+								<input type="checkbox" id="pantai" name="" />
+								<label for="pantai"><span></span> Pantai</label> 
+							</div>
+						</div>
+						<div class="flex">
+							<div class="checkbox">
+								<input type="checkbox" id="Pegunungan" name="" />
+								<label for="Pegunungan"><span></span> Pegunungan</label> 
+							</div> 
+						</div>
+						<div class="flex">
+							<div class="checkbox">
+								<input type="checkbox" id="Kuliner" name="" />
+								<label for="Kuliner"><span></span> Kuliner</label> 
+							</div> 
+						</div>
+						<div class="flex">
+							<div class="checkbox">
+								<input type="checkbox" id="Museum" name="" />
+								<label for="Museum"><span></span> Museum</label> 
+							</div> 
+						</div>
+						<div class="flex">
+							<div class="checkbox">
+								<input type="checkbox" id="Hutan" name="" />
+								<label for="Hutan"><span></span> Hutan dan Bukit</label> 
+							</div> 
+						</div>
+						<div class="flex">
+							<div class="checkbox">
+								<input type="checkbox" id="Belanja" name="" />
+								<label for="Belanja"><span></span> Belanja</label> 
+							</div> 
+						</div>
+
+						<h5 class="harga">BERDASARKAN HARGA</h5>
+						<div class="flex">
+							<div class="checkbox">
+								<input type="checkbox" id="Termurah" name="" />
+								<label for="Termurah"><span></span> Termurah</label> 
+							</div> 
+						</div>
+						<div class="flex">
+							<div class="checkbox">
+								<input type="checkbox" id="Temahal" name="" />
+								<label for="Temahal"><span></span> Temahal</label> 
+							</div>
+						</div>
+
+						<h5 class="harga">BERDASARKAN JARAK</h5>
+						<div class="flex">
+							<div class="checkbox">
+								<input type="checkbox" id="Terdekat" name="" />
+								<label for="Terdekat"><span></span> Terdekat</label> 
+							</div> 
+						</div>
+						<div class="flex">
+							<div class="checkbox">
+								<input type="checkbox" id="Terjauh" name="" />
+								<label for="Terjauh"><span></span> Terjauh</label> 
+							</div>
+						</div>
+
+						<h5 class="harga">BERDASARKAN RATE</h5>
+						<div class="flex">
+							<div class="checkbox">
+								<input type="checkbox" id="b-1" name="" />
+								<label for="b-1"><span></span> 
+									<img src="assets/img/icon/star-o.svg">
+									<img src="assets/img/icon/star-g.svg">
+									<img src="assets/img/icon/star-g.svg">
+									<img src="assets/img/icon/star-g.svg">
+									<img src="assets/img/icon/star-g.svg">
+								</label> 
+							</div> 
+						</div>
+						<div class="flex">
+							<div class="checkbox">
+								<input type="checkbox" id="b-2" name="" />
+								<label for="b-2"><span></span> 
+									<img src="assets/img/icon/star-o.svg">
+									<img src="assets/img/icon/star-o.svg">
+									<img src="assets/img/icon/star-g.svg">
+									<img src="assets/img/icon/star-g.svg">
+									<img src="assets/img/icon/star-g.svg">
+								</label> 
+							</div> 
+						</div>
+						<div class="flex">
+							<div class="checkbox">
+								<input type="checkbox" id="b-3" name="" />
+								<label for="b-3"><span></span> 
+									<img src="assets/img/icon/star-o.svg">
+									<img src="assets/img/icon/star-o.svg">
+									<img src="assets/img/icon/star-o.svg">
+									<img src="assets/img/icon/star-g.svg">
+									<img src="assets/img/icon/star-g.svg">
+								</label> 
+							</div> 
+						</div>
+						<div class="flex">
+							<div class="checkbox">
+								<input type="checkbox" id="b-4" name="" />
+								<label for="b-4"><span></span> 
+									<img src="assets/img/icon/star-o.svg">
+									<img src="assets/img/icon/star-o.svg">
+									<img src="assets/img/icon/star-o.svg">
+									<img src="assets/img/icon/star-o.svg">
+									<img src="assets/img/icon/star-g.svg">
+								</label> 
+							</div> 
+						</div>
+						<div class="flex">
+							<div class="checkbox">
+								<input type="checkbox" id="b-5" name="" />
+								<label for="b-5"><span></span> 
+									<img src="assets/img/icon/star-o.svg">
+									<img src="assets/img/icon/star-o.svg">
+									<img src="assets/img/icon/star-o.svg">
+									<img src="assets/img/icon/star-o.svg">
+									<img src="assets/img/icon/star-o.svg">
+								</label> 
+							</div> 
+						</div>
+					</div>
+				</div>
+				<div class="grid-web-9">
+					<div class="content-result">
+						<div class="row">
+							<div class="grid-web-4">	
+								<div class="card-product">
+									<div class="img-product"><img src="assets/img/destinasi/product-1.png"></div>	
+									<div class="desc-product">
+										<h2><a href=""> Danau Toba</a></h2>
+										<p><img src="assets/img/icon/marker.svg"> Sumatra Utara</p>
+										<span class="price"><strong>Rp 40.000</strong></span>
+										<span class="rate">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-g.svg">
+										</span>
+									</div>
+								</div>
+							</div>	
+							<div class="grid-web-4">	
+								<div class="card-product">
+									<div class="img-product"><img src="assets/img/destinasi/product-1.png"></div>	
+									<div class="desc-product">
+										<h2><a href=""> Danau Toba</a></h2>
+										<p><img src="assets/img/icon/marker.svg"> Samosir, Sumatra Utara</p>
+										<span class="price"><strong>Rp 40.000</strong></span>
+										<span class="rate">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-g.svg">
+											<img src="assets/img/icon/star-g.svg">
+										</span>
+									</div>
+								</div>
+							</div>	
+							<div class="grid-web-4">	
+								<div class="card-product">
+									<div class="img-product"><img src="assets/img/destinasi/product-1.png"></div>	
+									<div class="desc-product">
+										<h2><a href=""> Tangkuban Prau</a></h2>
+										<p><img src="assets/img/icon/marker.svg"> Bandung, Jawa Barat</p>
+										<span class="price"><strong>Rp 40.000</strong></span>
+										<span class="rate">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-g.svg">
+										</span>
+									</div>
+								</div>
+							</div>	
+							<div class="grid-web-4">	
+								<div class="card-product">
+									<div class="img-product"><img src="assets/img/destinasi/product-1.png"></div>	
+									<div class="desc-product">
+										<h2><a href=""> Kalimutu</a></h2>
+										<p><img src="assets/img/icon/marker.svg"> Sumatra Utara</p>
+										<span class="price"><strong>Rp 40.000</strong></span>
+										<span class="rate">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-g.svg">
+										</span>
+									</div>
+								</div>
+							</div>	
+							<div class="grid-web-4">	
+								<div class="card-product">
+									<div class="img-product"><img src="assets/img/destinasi/product-1.png"></div>	
+									<div class="desc-product">
+										<h2><a href=""> Raja Ampat</a></h2>
+										<p><img src="assets/img/icon/marker.svg"> Sumatra Utara</p>
+										<span class="price"><strong>Rp 40.000</strong></span>
+										<span class="rate">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-g.svg">
+										</span>
+									</div>
+								</div>
+							</div>	
+							<div class="grid-web-4">	
+								<div class="card-product">
+									<div class="img-product"><img src="assets/img/destinasi/product-1.png"></div>	
+									<div class="desc-product">
+										<h2><a href=""> Garuda Wisnu Kencana</a></h2>
+										<p><img src="assets/img/icon/marker.svg"> Sumatra Utara</p>
+										<span class="price"><strong>Rp 40.000</strong></span>
+										<span class="rate">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-g.svg">
+										</span>
+									</div>
+								</div>
+							</div>	
+							<div class="grid-web-4">	
+								<div class="card-product">
+									<div class="img-product"><img src="assets/img/destinasi/product-1.png"></div>	
+									<div class="desc-product">
+										<h2><a href=""> Candi Borobudur</a></h2>
+										<p><img src="assets/img/icon/marker.svg"> Magelang, Jawa Tengah</p>
+										<span class="price"><strong>Rp 40.000</strong></span>
+										<span class="rate">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-g.svg">
+										</span>
+									</div>
+								</div>
+							</div>	
+							<div class="grid-web-4">	
+								<div class="card-product">
+									<div class="img-product"><img src="assets/img/destinasi/product-1.png"></div>	
+									<div class="desc-product">
+										<h2><a href=""> Gunung Bromo</a></h2>
+										<p><img src="assets/img/icon/marker.svg"> Sumatra Utara</p>
+										<span class="price"><strong>Rp 40.000</strong></span>
+										<span class="rate">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-o.svg">
+											<img src="assets/img/icon/star-g.svg">
+										</span>
+									</div>
+								</div>
+							</div>	
+						</div>	
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+		<div class="tabs-panel">
+
+			<!-- Input Tabs -->
+			<input type="radio" id="test1" name="tab" checked="checked" />
+			<input type="radio" id="test2" name="tab" />
+			<input type="radio" id="test3" name="tab" />
+			<!-- End Input Tabs -->
+
+			<!-- Start Tabs -->
+			<div class="tabs">
+				<div class="flex">
+					<div class="tab">
+						<label for="test1" onclick>
+							<div class="text text-center">MASUK</div>
+						</label>
+					</div>
+					<div class="tab">
+						<label for="test2" onclick>
+							<div class="text text-center">DAFTAR</div>
+						</label>
+					</div>
+					<div class="tab">
+						<label for="test3" onclick>
+							<div class="text text-center">DAFTAR</div>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- End Tabs -->
+
+			<div class="separator"></div>
+
+			<!-- Start Panels -->
+			<div class="panels">
+
+				<!-- Start Tab Panel -->
+				<div class="tab-panel" id="panel1">
+					<div class="content">
+
+					</div>
+				</div>
+				<!-- End Tab Panel -->
+
+				<!-- Start Tab Panel -->
+				<div class="tab-panel" id="panel2">
+					<div class="content">
+
+					</div>
+				</div>
+				<!-- End Tab Panel -->
+
+				<!-- Start Tab Panel -->
+				<div class="tab-panel" id="panel3">
+					<div class="content">
+
+					</div>
+				</div>
+				<!-- End Tab Panel -->
+
+			</div>
+			<!-- End Panels -->
+
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="grid-web-4">
+					<div class="logo-footer"><img src="assets/img/logo-footer.png"></div>
+					<div class="desc-footer">
+						<p>Harga Pas, Anda Bebas, Hati Puas.<br>
+						Pesan tiket wisatamu sekarang di Travel Nusantara</p>
+					</div>
+				</div>
+				<div class="grid-web-4">
+					<h4>KATEGORI WEBSITE</h4>
+					<div class="row">
+						<div class="grid-web-4">
+							<div class="kategori-footer">
+								<a href="">
+									<img src="assets/img/wisata/1.jpg" class="img-kategori-footer">
+									<div class="overlay-footer">
+										<p>Wisata</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="grid-web-4">
+							<div class="kategori-footer">
+								<a href="">
+									<img src="assets/img/kuliner/2.jpg" class="img-kategori-footer">
+									<div class="overlay-footer">
+										<p>Kuliner</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="grid-web-4">
+							<div class="kategori-footer">
+								<a href="">
+									<img src="assets/img/penginapan/3.jpg" class="img-kategori-footer">
+									<div class="overlay-footer">
+										<p>Hotel</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="grid-web-4">
+							<div class="kategori-footer">
+								<a href="">
+									<img src="assets/img/camping/6.jpg" class="img-kategori-footer">
+								<div class="overlay-footer">
+									<p>camping</p>
+								</div>
+								</a>
+							</div>
+						</div>
+						<div class="grid-web-4">
+							<div class="kategori-footer">
+								<a href="">
+									<img src="assets/img/event/6.jpg" class="img-kategori-footer">
+								<div class="overlay-footer">
+									<p>Event</p>
+								</div>
+								</a>
+							</div>
+						</div>
+						<div class="grid-web-4">
+							<div class="kategori-footer">
+								<a href="">
+									<img src="assets/img/berita/1.jpeg" class="img-kategori-footer">
+								<div class="overlay-footer">
+									<p>Berita</p>
+								</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid-web-4" style="padding-left: 50px;">
+					<h4>KONTAK KAMI</h4>
+					<div class="address">
+						<p>Jl DI.Panjaitan 128, Purwokerto Selatan</p>
+						<p>Phone: (081) 228258356 </p>
+						<p>E-Mail: simalakamateam@gmail.com</p> 
+					</div>
+					<div class="social">
+						<a href=""><img src="assets/img/icon/fb.svg"></a>
+						<a href=""><img src="assets/img/icon/ig.svg"></a>
+						<a href=""><img src="assets/img/icon/ftwitter.svg"></a>
+						<a href=""><img src="assets/img/icon/fgoogle-plus.svg"></a>
+						<a href=""><img src="assets/img/icon/fpinterest.svg"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/index.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+
+</body>
+</html>

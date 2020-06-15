@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#38454F" stroke-linecap="round" stroke-width="2.069" d="M31 1v14.483"/>
+        <path fill="#E24B4B" fill-rule="nonzero" d="M44.457 7.207H32.043V1h12.414l-4.138 3.103z"/>
+        <path fill="#8A9A6D" fill-rule="nonzero" d="M52.724 61L31 15.483 9.276 61z"/>
+        <path fill="#3A3F2D" fill-rule="nonzero" d="M23.88 60.972l7.204-24.717a.042.042 0 0 1 .075 0L38.363 61l-14.482-.028z"/>
+        <path stroke="#556080" stroke-linecap="round" stroke-width="2.069" d="M31 16.517l5.172-5.172M25.828 11.345L31 16.517M5.138 61S17.422 21.69 31 15.483M56.862 61S44.578 21.69 31 15.483M5.138 61L1 55.828M56.862 61L61 55.828"/>
+        <path fill="#596344" fill-rule="nonzero" d="M38.363 61l2.992-11.22a6.897 6.897 0 0 0-2.295-7.113l-7.938-6.495L38.363 61z"/>
+        <g fill="#C6D1B0" fill-rule="nonzero" transform="translate(11.345 48.586)">
+            <circle cx="3.103" cy="11.379" r="1.034"/>
+            <circle cx="7.241" cy="11.379" r="1.034"/>
+            <circle cx="5.172" cy="9.31" r="1.034"/>
+            <circle cx="5.172" cy="5.172" r="1.034"/>
+            <circle cx="9.31" cy="5.172" r="1.034"/>
+            <circle cx="7.241" cy="3.103" r="1.034"/>
+            <circle cx="5.172" cy="1.034" r="1.034"/>
+            <circle cx="1.034" cy="9.31" r="1.034"/>
+            <circle cx="9.31" cy="9.31" r="1.034"/>
+            <circle cx="7.241" cy="7.241" r="1.034"/>
+            <circle cx="3.103" cy="7.241" r="1.034"/>
+            <circle cx="36.207" cy="11.379" r="1.034"/>
+            <circle cx="32.069" cy="11.379" r="1.034"/>
+            <circle cx="34.138" cy="9.31" r="1.034"/>
+            <circle cx="34.138" cy="5.172" r="1.034"/>
+            <circle cx="30" cy="5.172" r="1.034"/>
+            <circle cx="32.069" cy="3.103" r="1.034"/>
+            <circle cx="34.138" cy="1.034" r="1.034"/>
+            <circle cx="38.276" cy="9.31" r="1.034"/>
+            <circle cx="30" cy="9.31" r="1.034"/>
+            <circle cx="32.069" cy="7.241" r="1.034"/>
+            <circle cx="36.207" cy="7.241" r="1.034"/>
+        </g>
+        <path fill="#596344" fill-rule="nonzero" d="M31.122 36.172L23.881 61l-2.992-11.22a6.897 6.897 0 0 1 2.295-7.113l7.938-6.495"/>
+    </g>
+</svg>

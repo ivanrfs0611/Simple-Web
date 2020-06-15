@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+    <g fill="none" fill-rule="evenodd" opacity=".5">
+        <circle cx="6" cy="6" r="6" fill="#FFF"/>
+        <text fill="#296FA9" stroke="#296EA8" stroke-width="2" font-family="Nunito-Bold, Nunito" font-size="6" font-weight="bold">
+            <tspan x="4.5" y="8">P</tspan>
+        </text>
+    </g>
+</svg>
